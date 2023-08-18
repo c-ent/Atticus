@@ -40,6 +40,8 @@ body{
 }
 
 .date{
+    font-family: Space Mono;
+
     margin-bottom: 20px;
     margin-left: 20px;
     color:#683200;
