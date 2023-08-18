@@ -20,8 +20,6 @@
                 <h1 class="title typing-animation"> A Quest of</h1>
                 <h1 class="title2 typing-animation">Finding Peace </h1>
                 <p class="date typing-animation"> July 2023</p>
-                
-                
             </div>
 
             <div class="mountain">
@@ -158,8 +156,34 @@
     </div>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="/scripts.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const sleep = (ms) => {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  };
+  
+  // This is an array of html elements, since getElementsByClassName returns an array, since there can be more than one html element with that class.
+  const elements = document.getElementsByClassName("typing-animation");
+  
+  (async (typedElements) => {
+     let texts = []
+     
+     for (let element of typedElements){
+      // The property to access the text inside the elements .innerHTML, if its a user interactuable element such as <input> or <textarea> then its .value
+      texts.push(element.innerHTML);
+      element.innerHTML = "";
+     }
+     
+     // texts and typedElements has the same length.
+     for (let i = 0; i < texts.length; i++) {
+        for (let character of texts[i]) {
+          typedElements[i].innerHTML += character;
+          await sleep(20)
+        } 
+     }
+    
+  })(elements);
+    </script>
     <script>
       AOS.init();
     </script>
