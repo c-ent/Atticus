@@ -1,17 +1,29 @@
 body{
     background-color: #E9E6D8;
+
+
 }
 
+@font-face {
+    font-family:Rastellino;
+    src: url(/fonts/BuongiornoRastellino.otf);
+}
 
 .container{
-    width: 480px;
+    max-width: 480px;
 }
 
 
+.mountain{
+   
+    overflow: hidden;
+
+}
 
 .title{
     margin-top: 20px;
     width: 225px;
+    margin-bottom: 15px;
 }
 
 .title,.title2{
@@ -20,14 +32,26 @@ body{
     font-size: 36px;
     color:white;
     background:  #683200;
-    margin-bottom: 15px;
+   
     margin-left: 20px;
 }
 
 .date{
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin-left: 20px;
     color:#683200;
+
+}
+
+.signature{
+    
+    
+}
+.indimoc{
+    font-family:Rastellino;
+    font-size: 90px;
+    line-height: 0.5;
+    margin: 0;
 
 }
 
@@ -44,7 +68,7 @@ body{
     padding: 15px;
     font-family: Space Mono;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 13px;
     align-items: center;
     color: black;
     width: 50%;
@@ -57,18 +81,26 @@ body{
     display: flex;
     width: 50%;
     align-items: center;
+    overflow: hidden;
 }
 
 .dandelions{
     width: 200px;
-    height: 100%;
+    height: auto;
+}
+
+.birds1{
+    width: 210px;
+    height: auto;
 }
 
 .sun{
-    background-image: url(/images/sun.png);
-    width: 50%;
-    height:200px;
-    background-position: center;
+    width:200px;
+    object-position: center;
+}
+
+.typed-cursor {
+    display: none;
 }
 
 
