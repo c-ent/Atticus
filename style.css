@@ -1,7 +1,5 @@
 body{
     background-color: #E9E6D8;
-
-
 }
 
 @font-face {
@@ -20,7 +18,6 @@ body{
 
 .mountain img {
 
-
   }
 
 .title{
@@ -35,13 +32,11 @@ body{
     font-size: 36px;
     color:white;
     background:  #683200;
-   
     margin-left: 20px;
 }
 
 .date{
     font-family: Space Mono;
-
     margin-bottom: 20px;
     margin-left: 20px;
     color:#683200;
@@ -50,14 +45,11 @@ body{
 
 .signature{
     
-    
 }
 
 .fade1{
     opacity: 0; /* Start with opacity set to 0 */
     animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
-  
-
 }
 .fade2{
     opacity: 0; /* Start with opacity set to 0 */
