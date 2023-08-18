@@ -15,10 +15,13 @@ body{
 
 
 .mountain{
-   
-    overflow: hidden;
 
 }
+
+.mountain img {
+
+
+  }
 
 .title{
     margin-top: 20px;
@@ -47,6 +50,37 @@ body{
     
     
 }
+
+.fade1{
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
+  
+
+}
+.fade2{
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
+    animation-delay: 10s; /* Delay the start of the animation by 2 seconds */
+   
+    
+}
+.fade3{
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
+    animation-delay: 30s; /* Delay the start of the animation by 2 seconds */
+}
+.fade4{
+    opacity: 0; /* Start with opacity set to 0 */
+    animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
+    animation-delay: 37s; /* Delay the start of the animation by 2 seconds */
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
 .indimoc{
     font-family:Rastellino;
     font-size: 90px;
