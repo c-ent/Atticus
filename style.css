@@ -48,11 +48,11 @@ body{
 }
 
 .fade1{
-    opacity: 0; /* Start with opacity set to 0 */
+   
     animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
 }
 .fade2{
-    opacity: 0; /* Start with opacity set to 0 */
+ 
     animation: fadeIn 3s forwards; /* Apply the fadeIn animation */
     animation-delay: 10s; /* Delay the start of the animation by 2 seconds */
    
